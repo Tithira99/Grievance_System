@@ -1,0 +1,37 @@
+<title>Responses</title>
+ <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+ 
+  
+
+  
+<body>
+  
+  <div class="testbox">
+    <form (ngSubmit)="onSubmit(grievance.grievanceID, grievance)">
+      <h1>Add Comment</h1><br>
+      <div class="item">
+        <p>Solution By Admin(read Only):</p>
+        <textarea rows="5" [(ngModel)]="grievance.grievanceSolution"  name="EmpName4" readonly></textarea>
+      </div>
+      <div class="item">
+          <p>AGM's Comment(read only):</p>
+          <textarea rows="5" [(ngModel)]="grievance.agmResponse"  name="EmpName2" readonly></textarea>
+      </div>
+      <div class="item">
+          <p>Your Comment(read only):</p>
+          <textarea rows="5" [(ngModel)]="grievance.gmResponse "  name="EmpName1"></textarea>
+      </div>
+      <div *ngIf=message class="alert alert-danger">
+        {{message}}
+      </div>
+
+      <div class="btn-block">
+        <button type="submit">Add Comment</button>
+        <button style="position:relative; left:30px" (click)="goToBack()">Back</button>
+      </div>
+    </form>
+  </div>
+</body>
+  
+  

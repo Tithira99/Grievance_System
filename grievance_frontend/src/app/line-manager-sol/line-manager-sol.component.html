@@ -1,0 +1,60 @@
+<title>HR Complaint Form</title>
+ <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+ 
+
+ 
+  
+<div class="testbox">
+  <form (ngSubmit)="onSubmit(grievance.grievanceID, grievance)">
+    <h1>Solution Adding Page</h1><br>
+      <div class="item">
+        <p>Number(read only):</p>
+        <div class="name-item">
+          <input id="Ename" type="text" [(ngModel)]="grievance.grievanceID"  name="EmpName" readonly>
+        </div>
+      </div>
+      <div class="item">
+        <p>Greivance(read only):</p>
+        <textarea rows="5" type="text"  [(ngModel)]="grievance.grievanceDescription"  name="EmpName1" readonly ></textarea>
+      </div>
+        <div class="item">
+          <p>Title(read only):</p>
+          <div class="name-item">
+            <input [(ngModel)]="employee.department"  type="text" name="name" placeholder="" name="EmpName2" readonly>
+          </div>
+        </div>
+      <div class="item status">
+        <p>Status(read only):</p>
+        <div class="status-item">
+          
+          <input type="text"  [(ngModel)]="grievance.grievanceStatus" name="status" readonly> 
+          
+        </div>
+      </div>
+      <div class="item">
+        <p>Date(read only):</p>
+        <div class="name-item">
+          <input type="text" name="name" placeholder=""  [(ngModel)]="grievance.grievanceDate"  name="EmpName3" readonly>
+        </div>
+      </div>
+      <div class="item">
+        <p>Name(read only):</p>
+        <div class="name-item">
+          <input [(ngModel)]="employee.employeeName" type="text" name="name" placeholder="" readonly>
+        </div>
+      </div>
+      <div class="item">
+        <p>Suggestions:</p>
+        <textarea rows="5" [(ngModel)]="grievance.grievanceSolution "  name="EmpName4"></textarea>
+      </div>
+      <div id="alert"  class="alert alert-danger" *ngIf=response>
+        {{response}}
+      </div>
+    
+      <div class="btn-block">
+        <button type="submit" >Confirm Solution</button>
+        <button style="position:relative;left:10px;" (click)="goToBack(grievance)">Back</button>
+      </div>
+  </form>
+</div>

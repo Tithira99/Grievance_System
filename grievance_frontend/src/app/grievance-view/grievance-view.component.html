@@ -1,0 +1,20 @@
+
+<body>
+  <div class="testbox">
+    <form >
+      <h1>Grievance Page</h1><br>
+      <div class="item">
+        <p>Grievance:</p>
+        <div>{{grievance.grievanceDescription}}</div>
+      </div>
+      <div *ngIf=image class="item">
+        <img [src]="image" width="400px">
+      </div>
+    
+      <div class="btn-block">
+        <button (click)="goToBack()">Back</button>
+      </div>
+    </form>
+  </div>
+</body>
+

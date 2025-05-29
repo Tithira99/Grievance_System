@@ -1,0 +1,40 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  
+
+
+  
+
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Grievance System</h1>
+		<p>You can't hold on to a grievance and be happy.<br> Time to make choice!</p>
+		</div>
+	</div>
+	
+	
+	<div class="complain-container">
+	    <div class="form-btn">
+		    <h1>Record <span>your</span><br> Grievance <span>here</span></h1>
+	    </div>
+		<p>Add Complaint +</p><br>
+			 
+			   
+		   
+		<form (ngSubmit)="onSubmit()">		     
+            <div class="item">
+                <p>Describe your grievance :</p>
+                <textarea [(ngModel)]="grievance.grievanceDescription" id="Des" rows="7" cols="40" name="des"></textarea>
+			</div><br>
+               
+            <label for="image-in">Attached as Image -</label>
+            <input  type="file" (change)="onFileSelected($event)" name="complaint" multiple= "multiple" id="image-in">
+			<button  type="submit" class="btn1">Submit</button>
+			<button  style="position: relative;left:20px"(click)="goToUserView()" class="btn1">Back</button>
+        </form>
+			   
+    </div>	
+	
+</div>

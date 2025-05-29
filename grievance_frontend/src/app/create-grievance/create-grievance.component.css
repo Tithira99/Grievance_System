@@ -1,0 +1,142 @@
+body {
+    background-image: linear-gradient();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+  }
+  .navbar
+  {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+  }
+  nav
+  {
+      flex: 1;
+      text-align: right;
+  }
+  nav ul
+  {
+      display: inline-block;
+      list-style-type: none;
+  }
+  nav ul li
+  {
+      display: inline-block;
+      margin-right: 20px;
+  }
+  a
+  {
+      text-decoration: none;
+      color: #000;
+  }
+  p
+  {
+      color: #000;
+  }
+  .box-form {
+    
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 6px #090b6f85;
+  }
+  @media (max-width: 980px) {
+    .box-form {
+      flex-flow: wrap;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+  .box-form div {
+    height: auto;
+  }
+  .box-form .left {
+    color: #FFFFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./database.png");
+    overflow: hidden;
+  }
+  .box-form .left .overlay {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    background: #5961f9ad;
+    overflow: hidden; 
+  }
+  .box-form .left .overlay p{
+      color: #fff;
+  }
+  .box-form .left .overlay h1 {
+    font-size: 6vmax;
+    line-height: 1;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .complain-page{
+      padding: 10px;
+  }
+  .complain-container{
+      background: linear-gradient(180deg, #CFD4D6 0%, rgba(116, 127, 130, 0.18) 87.5%);
+      width: 500px;
+      height: 700px;
+      position: relative;
+      text-align: center;
+      margin: auto;
+      box-shadow: 0 0 20px 0px rgba(0,0,0,0.8);
+  }	
+  .complain-container input{
+      width: 60%;
+      height: 80;
+      margin: 12px 0;
+      padding: 0 10px;
+      border: 2px solid #ccc;
+  }	
+  .drop{
+      font-size: 20;
+  }
+  .btn
+  {
+      display: inline-block;
+      background: linear-gradient(92.42deg, #5191B5 0%, #1E4C6E 100%);
+      color: #fff;
+      padding: 8px 30px;
+      margin: 30px 0;
+      border-radius: 30px;
+      transition: background 0.5s;
+  }
+  
+  form.btn focus{
+      outline: none;
+  }
+  .form-btn h1{
+      color: #6358DC;
+      font-size: 40px;
+  }
+  .form-btn span{
+      color: 57556C;
+  }	
+  .btn1{
+      display: inline-block;
+      background: linear-gradient(92.42deg, #5191B5 0%, #1E4C6E 100%);
+      color: #fff;
+      padding: 8px 30px;
+      margin: 30px 0;
+      border-radius: 30px;
+      transition: background 0.5s;
+  }

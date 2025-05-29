@@ -1,0 +1,89 @@
+
+
+ <head>
+  <title>Admin Table </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+ 
+    <div class="header">
+
+      <div class="container">
+        <div  class="navbar">
+          <div class="logo">
+            <img src="../assets/images/Logo.png" width="80px">
+          </div>
+          <nav>
+            <ul id="MenuItems">		
+              <li><a routerLink="/grievances">Grievance List </a></li>
+              <li><a routerLink="/create-employee">Register Employee </a></li>
+              <li><a  routerLink="/employees">Employee List </a></li>
+              <li><a  routerLink="/home">Logout </a></li>
+            </ul>
+          </nav>	
+                    
+        </div>
+      </div>
+    </div>
+
+
+
+  
+
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center mb-5">
+      <h2 class="heading-section">Employee List</h2>
+    </div>
+  </div>
+
+
+  
+
+  <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>Employee Number </th>
+            <th>Employee Name </th>
+            <th>Division </th>
+            <th>Department </th>
+            <th>Post</th>
+            <th>Role</th>
+            <th>Email</th>
+            <th>Line Manager</th>
+            <th>Mobile Number</th>
+            <th>User Name</th>
+            <th>Action</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor = "let employee of employees">
+            <th scope="row">{{employee.employeeID}}</th>
+            <td>{{employee.employeeName}}</td>
+            <td>{{employee.division}}</td>
+            <td>{{employee.department}}</td>
+            <td>{{employee.post}}</td>
+            <td>{{employee.role}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.lineManager}}</td>
+            <td>{{employee.mobileNumber}}</td>
+            <td>{{employee.userName}}</td>         
+            <td>
+              <button (click)="updateEmployee(employee.employeeID)" class="btn btn-info">Update</button>
+              <button  (click)="removeEmployee(employee.employeeID)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+              <button  (click)="employeeDetails(employee.employeeID)" class="btn btn-danger" style="margin-left: 10px">View</button>
+            </td>         
+            
+          </tr>
+      </tbody>
+  </table>
+
+
+
+</body>
+

@@ -1,0 +1,48 @@
+  <div class="container">
+    <div  class="navbar">
+      <div class="logo">
+        <img src="../assets/images/Logo.png" width="80px">
+      </div>
+      <nav>
+        <ul id="MenuItems">		
+          <li><a  routerLink="/home">Logout </a></li>
+        </ul>
+      </nav>	
+                
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center mb-5">
+      <h2 class="heading-section">User Follow Up</h2>
+    </div>
+  </div>
+  <div>
+    <button (click)="addGrievance()" class="d-flex justify-content-start" class="btn btn-warning">Add Grievance</button>
+    <button (click)="updateProfile(id)" style="position:relative; left:20px;"class="d-flex justify-content-start" class="btn btn-warning">Update Profile</button>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr >
+        <th>Number</th>
+        <th>Grievance</th>
+        <th>Status</th>
+        <th>Date</th>		
+        <th>Employee ID</th>     
+        <th>Solution</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let grievance of grievances">
+        <th scope="row">{{grievance.grievanceID}}</th>
+        <td><button (click)="viewG(grievance.grievanceID)" class="btn btn-info">View Grievance</button></td>
+        <td><div  class="text-danger"><b>{{grievance.grievanceStatus}}</b></div></td>
+        <td>{{grievance.grievanceDate}}</td>
+        <td>{{grievance.employeeID}}</td>
+        <td class="text-success">
+            <b>{{grievance.grievanceSolution}}</b>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  

@@ -1,0 +1,64 @@
+
+<title>Line Manager Table </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<div class="container">
+  <div  class="navbar">
+    <div class="logo">
+      <img src="../assets/images/Logo.png" width="80px">
+    </div>
+    <nav>
+      <ul id="MenuItems">		
+        <li><a  routerLink="/home">Logout </a></li>
+      </ul>
+    </nav>	
+              
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-md-6 text-center mb-5">
+    <h2 class="heading-section">Line Manager Follow Up Page</h2>
+  </div>
+</div>
+
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Number</th>
+        <th>Grievance</th>
+        <th>Title</th>
+        <th>Status</th>
+        <th>Date</th>
+        <th>Name</th>					      
+        <th>Action</th>						  
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let object of objects">
+          <th scope="row">{{object[0]}}</th>
+          <td><button (click)="viewG(object[0])" class="btn btn-info">View Grievance</button></td>
+          <td>{{object[2]}}</td>
+          <td  class="text-danger"><b>{{object[3]}}</b></td>
+          <td>{{object[4]}}</td>
+          <td>{{object[5]}}</td>
+          <td>
+            <button (click)="addResponse(object[0])" class="btn btn-success">Add Response</button> 
+            <button style="position:relative;left:10px" (click)="sendToHR(object[0])" class="btn btn-danger">Send to HR</button>
+            <div *ngIf=message  class="alert alert-danger">{{message}}</div>
+          </td>						  
+      </tr>
+    </tbody>
+</table>
+      

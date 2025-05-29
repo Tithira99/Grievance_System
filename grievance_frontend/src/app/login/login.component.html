@@ -1,0 +1,111 @@
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="header">
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                   <img src="../assets/images/Logo.png" width="80px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">		
+                    <li><a routerLink="/home">Home </a></li>
+                    <li><a routerLink="/about">About</a></li>
+                    <li><a routerLink="/login">Login </a></li>
+                    <li><a  routerLink="/charts">Chart1</a></li>
+                    <li><a  routerLink="/line-m-charts">Chart2</a></li>
+                    <li><a  routerLink="/avg-chart">Chart3</a></li>
+                    </ul>
+                </nav>	
+                            
+            </div>
+        </div>
+    </div>
+       
+    
+  
+    <div class="box-form">
+        <div class="left">
+            <div class="overlay">
+                <h1>Grievance System</h1>
+                <p>You can't hold on to a grievance and be happy.<br> Time to make choice!</p>
+            </div>
+        </div>
+         
+    
+	
+       
+            <div class="right">
+                <form (ngSubmit)="onSubmit(usnm.value, pswrd.value)">
+
+                    <h5>LOGIN</h5>
+                    
+                
+                    <div style="margin-top:40px"class="inputs">
+                        <input id="usnm" #usnm type="text" placeholder="Username">
+                        <br>
+                        <input id="pswrd" #pswrd type="password" placeholder="Password">
+                    </div>
+                   
+                     <div *ngIf=error id="errorMessage" class="alert alert-danger" #errorMessage>{{error}}</div> 
+                      
+                    
+                    <button type ="submit">Login</button>
+                </form>
+            
+        
+            </div>
+        
+    </div>
+            
+     
+  
+        
+</body>
+
+
+<!--
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Grievance System</h1>
+		<p>You can't hold on to a grievance and be happy.<br> Time to make choice!</p>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>LOGIN</h5>
+		<p>Don't have an account? <a href="#">Creat Your Account</a> it takes less than a minute</p>
+		<div class="inputs">
+			<input type="text" placeholder="Username">
+			<br>
+			<input type="password" placeholder="Password">
+		</div>
+			
+			<br><br>
+			
+		<div class="remember-me--forget-password">
+				
+		<input type="checkbox" name="item" checked/>
+		<span class="text-checkbox">Remember me</span>
+	</label>
+			<p>forget password?</p>
+		</div>
+			
+			<br>
+			
+			<button><a href = "complain - Copy.html" type = "button">Login</a>
+	</div>
+	
+-->
