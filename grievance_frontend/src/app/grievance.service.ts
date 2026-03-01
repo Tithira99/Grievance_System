@@ -2,8 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { observableToBeFn } from 'rxjs/internal/testing/TestScheduler';
-import { Grievance } from './grievance';
-import { GrievanceTime } from './grievance-time';
+import { Grievance } from './grievance.model';
+import { GrievanceTime } from './grievance-time.model';
 
 @Injectable({
   providedIn:'root'

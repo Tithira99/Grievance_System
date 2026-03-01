@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GrievanceFrontEnd
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
@@ -25,3 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+Read the Report.pdf file for more information about the System.
+>>>>>>> d0ec879259db95bd273c91806d5b09e81f9ac1bf

@@ -3,7 +3,7 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EmployeeService } from '../employee.service';
-import { Grievance } from '../grievance';
+import { Grievance } from '../grievance.model';
 import { GrievanceService } from '../grievance.service';
 import { ImageUploadService } from '../image-upload.service';
 

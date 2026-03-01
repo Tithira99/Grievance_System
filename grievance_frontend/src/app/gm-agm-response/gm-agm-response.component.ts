@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Grievance } from '../grievance';
+import { Grievance } from '../grievance.model';
 import { GrievanceListComponent } from '../grievance-list/grievance-list.component';
 import { GrievanceService } from '../grievance.service';
 

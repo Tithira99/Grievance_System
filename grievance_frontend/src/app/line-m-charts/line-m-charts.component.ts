@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GrievanceService } from '../grievance.service';
 
 import { Chart} from 'chart.js';
-import { GrievanceTime } from '../grievance-time';
+import { GrievanceTime } from '../grievance-time.model';
 import { EmployeeService } from '../employee.service';
 
 

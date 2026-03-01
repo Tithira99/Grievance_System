@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FilterService } from '../filter.service';
-import { Grievance } from '../grievance';
+import { Grievance } from '../grievance.model';
 import { GrievanceService } from '../grievance.service';
 
 @Component({

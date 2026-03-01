@@ -30,8 +30,9 @@ import { UserGViewComponent } from './user-g-view/user-g-view.component';
 import { UserViewComponent } from './user-view/user-view.component';
 
 const routes: Routes = [
+  {path:  '', redirectTo:'admin', pathMatch: 'full'},
   {path: 'employees', component: EmployeeListComponent},
-  {path: 'grievances', component: GrievanceListComponent},
+  {path: 'admin', component: GrievanceListComponent},
   {path: 'about', component: AboutComponent},
   {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
@@ -51,9 +52,7 @@ const routes: Routes = [
   {path: 'line-m-view/:id', component: LineMViewComponent},
   {path: 'create-employee', component: CreateEmployeeComponent},
   {path: 'create-grievance/:id', component:CreateGrievanceComponent},
-  {path:  '', redirectTo:'grievances', pathMatch: 'full'},
   {path:  'update-employee/:id', component:UpdateEmployeeComponent},
-  {path:  'update-grievance/:id', component: UpdateGrievanceComponent},
   {path:  'line-manager-sol/:id', component: LineManagerSolComponent},
   {path:  'employee-details/:id', component: EmployeeDetailsComponent},
   {path:  'charts', component: ChartsComponent},

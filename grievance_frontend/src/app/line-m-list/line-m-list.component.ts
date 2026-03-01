@@ -4,7 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { EmployeeService } from '../employee.service';
 import { FilterService } from '../filter.service';
-import { Grievance } from '../grievance';
+import { Grievance } from '../grievance.model';
 import { GrievanceService } from '../grievance.service';
 
 @Component({

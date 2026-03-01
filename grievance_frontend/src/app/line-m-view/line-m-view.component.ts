@@ -2,9 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EmployeeService } from '../employee.service';
-import { Grievance } from '../grievance';
+import { Grievance } from '../grievance.model';
 import { GrievanceService } from '../grievance.service';
-import { ImageModel } from '../image-model';
+import { ImageModel } from '../image.model';
 
 @Component({
   selector: 'app-line-m-view',

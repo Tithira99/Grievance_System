@@ -1,4 +1,4 @@
-import { ImageModel } from './image-model';
+import { ImageModel } from './image.model';
 
 describe('ImageModel', () => {
   it('should create an instance', () => {

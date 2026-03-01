@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Employee } from '../employee';
+import { Employee } from '../employee.model';
 import { EmployeeService } from '../employee.service';
 
 @Component({

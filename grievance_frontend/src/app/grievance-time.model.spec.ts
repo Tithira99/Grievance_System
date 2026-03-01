@@ -1,4 +1,4 @@
-import { GrievanceTime } from './grievance-time';
+import { GrievanceTime } from './grievance-time.model';
 
 describe('GrievanceTime', () => {
   it('should create an instance', () => {

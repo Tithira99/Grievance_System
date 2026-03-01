@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GrievanceTime } from '../grievance-time';
+import { GrievanceTime } from '../grievance-time.model';
 import { GrievanceService } from '../grievance.service';
 import { Chart } from 'chart.js';
 
