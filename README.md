@@ -77,6 +77,99 @@ The backend provides RESTful APIs that manage complaint data, workflow status, a
 - Git / GitHub
   
 ---
+## Requirements
+
+- Java 17 or later
+- Node.js and npm
+- Angular CLI
+- MySQL Server
+- Git
+  
+---
+## Installation
+
+### Clone the Repository
+
+git clone https://github.com/Tithira99/Grievance_Handling_System.git
+cd Grievance_Handling_System
+
+---
+
+## Database Setup
+
+1. Install MySQL and create a database.
+
+CREATE DATABASE grievance_system;
+
+2. Update database credentials in the backend configuration file:
+
+backend/src/main/resources/application.properties
+
+spring.datasource.url=jdbc:mysql://localhost:3306/grievance_system
+spring.datasource.username=YOUR_USERNAME
+spring.datasource.password=YOUR_PASSWORD
+
+---
+
+## Running the Backend (Spring Boot)
+
+Navigate to the backend folder:
+cd backend
+
+Run the application:
+./mvnw spring-boot:run
+
+## Running the Frontend (Angular)
+
+Navigate to the frontend folder:
+
+cd frontend
+
+Install dependencies:
+
+npm install
+
+Start the Angular development server:
+
+ng serve
+
+---
+
+## Screenshots
+<img width="1005" height="560" alt="image" src="https://github.com/user-attachments/assets/63178023-f7ce-47dc-8e26-9fd6752c1353" />
+<img width="1080" height="474" alt="image" src="https://github.com/user-attachments/assets/0e4ede74-b007-47f5-a121-f93eab236ce3" />
+<img width="1080" height="506" alt="image" src="https://github.com/user-attachments/assets/7a742d7d-bfb6-45bc-b137-871cb3c83a5d" />
+<img width="1080" height="578" alt="image" src="https://github.com/user-attachments/assets/bc2b095c-1f1e-4d36-8548-c55ea3529e86" />
+<img width="1080" height="537" alt="image" src="https://github.com/user-attachments/assets/44a73082-0b13-49b8-8847-a7127ec9ccb9" />
+<img width="1080" height="578" alt="image" src="https://github.com/user-attachments/assets/3736f268-b366-4e2f-8532-aa4e01b27bd9" />
+<img width="1080" height="531" alt="image" src="https://github.com/user-attachments/assets/6e8d77e5-255c-4a96-be01-e833c71ad661" />
+
+
+
+---
+
+## API Examples
+```
+GET /adminTable
+GET /employees
+POST /employees
+PUT /employees/{id}
+   |
+   |
+   |
+   |
+etc------------
+```
+---
+
+## Example Workflow
+
+1. Employee submits a grievance.
+2. HR reviews the complaint.
+3. The request moves through multiple approval levels.
+4. Final decision is recorded in the system.
+
+---
 
 ## Key Concepts Applied
 - Web application architecture
@@ -95,7 +188,7 @@ Grievance_Handling_System
 ├── backend
 │   ├── controllers
 │   ├── services
-│   ├── models
+│   ├── models(Entities)
 │   └── repositories
 │
 ├── frontend
@@ -104,7 +197,7 @@ Grievance_Handling_System
 │   └── UI modules
 │
 ├── database
-│   └── schema.sql
+│   └── schema.sql(Database)
 │
 └── README.md
 ```
