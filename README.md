@@ -89,6 +89,7 @@ The backend provides RESTful APIs that manage complaint data, workflow status, a
 ---
 ## Project Structure
 
+```
 Grievance_Handling_System
 │
 ├── backend
@@ -102,8 +103,11 @@ Grievance_Handling_System
 │   ├── services
 │   └── UI modules
 │
-└── database
-    └── schema.sql
+├── database
+│   └── schema.sql
+│
+└── README.md
+```
 
 ## Learning Outcomes
 
