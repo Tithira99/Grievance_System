@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
             this.router.navigate(['user-view',this.employee.employeeID])
           }else if(this.employee.role=="Admin"){
   
-            this.router.navigate(['grievances'])
+            this.router.navigate(['admin'])
   
   
           }else if(this.employee.role=="AGM"){
