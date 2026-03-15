@@ -2,8 +2,8 @@
 
 ## Project Information
 Development Period: September 2021 – December 2021  
-Course: Introduction to Metaheuristics  
-Type: University Course Project
+Course: 2nd Year Group Project
+Type: Team Project of 2 members at Lanka Nippon Biztech Institute 
 
 ## Overview
 The **Grievance Handling System** is a web-based application designed to improve the efficiency and transparency of employee complaint management within large organizations. The system allows Human Resources (HR) departments to receive, track, review, and resolve employee grievances through a structured workflow.
